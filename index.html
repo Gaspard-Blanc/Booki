@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="author" content="BLANC Gaspard" />
+        <meta name="description" content="Trouver un hébergement pour des vacances de rêve grâce à Booki" />
+        <title>Booki</title>
+        <link rel="stylesheet" href="css/normalise.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/mediaqueries.css" />
+        <script src="https://kit.fontawesome.com/7bf3a438a8.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo/Booki.png" 
+                 srcset="images/logo/Booki.png 191w,
+                         images/logo/Booki_3x.png 285w"
+                 sizes="(max-width:767px) 16vw, (min-width:768px) and (max-width:991px) 9.76vw, (min-width:992px) 7.69vw"
+                 alt="logo"/>
+            <nav>
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="recherche">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p id="info">En plein centre ville ou en pleine nature</p>
+                <form method="post" action="index.html" id="barre-recherche">
+                    <div id="icone-recherche"><i class="fas fa-map-marker-alt"></i></div>
+                    <input id="texte-recherche" type="search" name="recherche" placeholder="  Marseille, France" />
+                    <input id="bouton-recherche" type="button" value="Rechercher" />
+                    <button id="bouton-smart" type="button"><i class="fas fa-search"></i></button>
+                </form>
+                <div id="filtres">
+                    <p id="categorie-filtre">Filtres</p>
+                    <div id="groupe-filtre">
+                        <a href="#" class="filtre">
+                            <i class="fas fa-money-bill-wave icone"></i>
+                            <p>Économique</p>
+                        </a>
+                        <a href="#" class="filtre">
+                            <i class="fas fa-child icone"></i>
+                            <p>Familial</p>
+                        </a>
+                        <a href="#" class="filtre">
+                            <i class="fas fa-heart icone"></i>
+                            <p>Romantique</p>
+                        </a>
+                        <a href="#" class="filtre">
+                            <i class="fas fa-dog icone"></i>
+                            <p>Animaux autorisés</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="disponible">
+                    <i class="fas fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+            <section id="section-hebergements">
+                <div id="marseille">
+                    <div id="titre-hebergement">
+                        <h2 id="hebergements">Hébergements à Marseille</h2>
+                    </div>
+                    <div class="hebergements-position">
+                        <a href="#" class="carte-hebergement">
+                            <div class="image-hebergement">
+                                <img src="images/hebergements/4_small/auberge-la-cannebiere_s.jpg"
+                                     srcset="images/hebergements/4_small/auberge-la-cannebiere_s.jpg 750w,
+                                             images/hebergements/3_medium/auberge-la-cannebiere_m.jpg 1499w,
+                                             images/hebergements/2_large/auberge-la-cannebiere_l.jpg 2997w,
+                                             images/hebergements/1_xlarge/auberge-la-cannebiere_xl.jpg 5993w"
+                                     sizes="(max-width:767px) 89.66vw, (min-width:768px) and (max-width:991px) 26.09vw, (min-width:992px) 16.13vw"
+                                     alt="Auberge La Cannebière" />
+                            </div>
+                            <div class="info-hebergement">    
+                                <h3 class="titre-hebergement">Auberge La Cannebière</h3>
+                                <p class="tarif-hebergement">Nuit à partir de <span class="bold">25€</span></p>
+                                <div class="icone-hebergement etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star etoile-grise"></i>
+                                </div>    
+                            </div>
+                        </a>
+                        <a href="#" class="carte-hebergement">
+                            <div class="image-hebergement">
+                                <img src="images/hebergements/4_small/hotel-du-port_s.jpg"
+                                     srcset="images/hebergements/4_small/hotel-du-port_s.jpg 684w,
+                                             images/hebergements/3_medium/hotel-du-port_m.jpg 1368w,
+                                             images/hebergements/2_large/hotel-du-port_l.jpg 2736w,
+                                             images/hebergements/1_xlarge/hotel-du-port_xl.jpg 5472w"
+                                     sizes="(max-width:767px) 89.66vw, (min-width:768px) and (max-width:991px) 26.09vw, (min-width:992px) 16.13vw"
+                                     alt="Hôtel du port" />
+                            </div>
+                            <div class="info-hebergement">    
+                                <h3 class="titre-hebergement">Hôtel du port</h3>
+                                <p class="tarif-hebergement">Nuit à partir de 52<span class="bold">€</span></p>
+                                <div class="icone-hebergement etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>    
+                            </div>
+                        </a>
+                        <a href="#" class="carte-hebergement">
+                            <div class="image-hebergement">
+                                <img src="images/hebergements/4_small/hotel-les-mouettes_s.jpg"
+                                     srcset="images/hebergements/4_small/hotel-les-mouettes_s.jpg 750w,
+                                             images/hebergements/3_medium/hotel-les-mouettes_m.jpg 1500w,
+                                             images/hebergements/2_large/hotel-les-mouettes_l.jpg 3000w,
+                                             images/hebergements/1_xlarge/hotel-les-mouettes_xl.jpg 6000w"
+                                     sizes="(max-width:767px) 89.66vw, (min-width:768px) and (max-width:991px) 26.09vw, (min-width:992px) 16.13vw"
+                                     alt="Hôtel Les mouettes" />
+                            </div>
+                            <div class="info-hebergement">    
+                                <h3 class="titre-hebergement">Hôtel Les mouettes</h3>
+                                <p class="tarif-hebergement">Nuit à partir de 76<span class="bold">€</span></p>
+                                <div class="icone-hebergement etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star etoile-grise"></i>
+                                </div>    
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hebergements-position">
+                        <a href="#" class="carte-hebergement">
+                            <div class="image-hebergement">
+                                <img src="images/hebergements/4_small/hotel-de-la-mer_s.jpg"
+                                     srcset="images/hebergements/4_small/hotel-de-la-mer_s.jpg 500w,
+                                             images/hebergements/3_medium/hotel-de-la-mer_m.jpg 1000w,
+                                             images/hebergements/2_large/hotel-de-la-mer_l.jpg 2000w,
+                                             images/hebergements/1_xlarge/hotel-de-la-mer_xl.jpg 4000w"
+                                     sizes="(max-width:767px) 89.66vw, (min-width:768px) and (max-width:991px) 26.09vw, (min-width:992px) 16.13vw"
+                                     alt="Hôtel de la mer" />
+                            </div>
+                            <div class="info-hebergement">    
+                                <h3 class="titre-hebergement">Hôtel de la mer</h3>
+                                <p class="tarif-hebergement">Nuit à partir de 46<span class="bold">€</span></p>
+                                <div class="icone-hebergement etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star etoile-grise"></i><i class="fas fa-star etoile-grise"></i>
+                                </div>    
+                            </div>
+                        </a>
+                        <a href="#" class="carte-hebergement">
+                            <div class="image-hebergement">
+                                <img src="images/hebergements/4_small/auberge-le-panier_s.jpg"
+                                     srcset="images/hebergements/4_small/auberge-le-panier_s.jpg 652w,
+                                             images/hebergements/3_medium/auberge-le-panier_m.jpg 1303w,
+                                             images/hebergements/2_large/auberge-le-panier_l.jpg 2606w,
+                                             images/hebergements/1_xlarge/auberge-le-panier_xl.jpg 5212w"
+                                     sizes="(max-width:767px) 89.66vw, (min-width:768px) and (max-width:991px) 26.09vw, (min-width:992px) 16.13vw"
+                                     alt="Auberge Le Panier" />
+                            </div>
+                            <div class="info-hebergement">    
+                                <h3 class="titre-hebergement">Auberge Le Panier</h3>
+                                <p class="tarif-hebergement">Nuit à partir de <span class="bold">23€</span></p>
+                                <div class="icone-hebergement etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star etoile-grise"></i>
+                                </div>    
+                            </div>
+                        </a>
+                        <a href="#" class="carte-hebergement">
+                            <div class="image-hebergement">
+                                <img src="images/hebergements/4_small/hotel-chez-amina_s.jpg"
+                                     srcset="images/hebergements/4_small/hotel-chez-amina_s.jpg 486w,
+                                             images/hebergements/3_medium/hotel-chez-amina_m.jpg 972w,
+                                             images/hebergements/2_large/hotel-chez-amina_l.jpg 1944w,
+                                             images/hebergements/1_xlarge/hotel-chez-amina_xl.jpg 3888w"
+                                     sizes="(max-width:767px) 89.66vw, (min-width:768px) and (max-width:991px) 26.09vw, (min-width:992px) 16.13vw"
+                                     alt="Hôtel chez Amina" />
+                            </div>
+                            <div class="info-hebergement">    
+                                <h3 class="titre-hebergement">Hôtel chez Amina</h3>
+                                <p class="tarif-hebergement">Nuit à partir de 96<span class="bold">€</span></p>
+                                <div class="icone-hebergement etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>    
+                            </div>
+                        </a>
+                    </div>
+                    <a id="afficher" href="#">Afficher plus</a>
+                </div>
+                <div id="populaire">
+                    <div id="titre-populaire">
+                        <h2>Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div id="populaire-position">
+                        <a href="#" class="carte-populaire">
+                            <div class="image-populaire">
+                                <img src="images/hebergements/4_small/hotel-le-soleil-du-matin_s.jpg"
+                                     srcset="images/hebergements/4_small/hotel-le-soleil-du-matin_s.jpg 532w,
+                                             images/hebergements/3_medium/hotel-le-soleil-du-matin_m.jpg 1063w,
+                                             images/hebergements/2_large/hotel-le-soleil-du-matin_l.jpg 2125w,
+                                             images/hebergements/1_xlarge/hotel-le-soleil-du-matin_xl.jpg 4249w"
+                                     sizes="(max-width:767px) 37.93vw, (min-width:768px) and (max-width:991px) 13.95vw, (min-width:992px) 10.91vw"
+                                     alt="Hôtel Le soleil du matin" />
+                            </div>
+                            <div class="info-populaire">    
+                                <h3 class="titre-populaire">Hôtel Le soleil du matin</h3>
+                                <p class="tarif-populaire">Nuit à partir de 128<span class="bold">€</span></p>
+                                <div class="icone-populaire etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>    
+                            </div>
+                        </a>
+                        <a href="#" class="carte-populaire">
+                            <div class="image-populaire">
+                                <img src="images/hebergements/4_small/au-coeur-de-l-eau-chambres-d-hotes_s.jpg"
+                                     srcset="images/hebergements/4_small/au-coeur-de-l-eau-chambres-d-hotes_s.jpg 504w,
+                                             images/hebergements/3_medium/au-coeur-de-l-eau-chambres-d-hotes_m.jpg 1008w,
+                                             images/hebergements/2_large/au-coeur-de-l-eau-chambres-d-hotes_l.jpg 2016w,
+                                             images/hebergements/1_xlarge/au-coeur-de-l-eau-chambres-d-hotes_xl.jpg 4032w"
+                                     sizes="(max-width:767px) 37.93vw, (min-width:768px) and (max-width:991px) 13.95vw, (min-width:992px) 10.91vw"
+                                     alt="Au coeur de l'eau Chambres d'hôtes" />
+                            </div>
+                            <div class="info-populaire">    
+                                <h3 class="titre-populaire">Au coeur de l'eau Chambres d'hôtes</h3>
+                                <p class="tarif-populaire">Nuit à partir de 71<span class="bold">€</span></p>
+                                <div class="icone-populaire etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star etoile-grise"></i>
+                                </div>    
+                            </div>
+                        </a>
+                        <a href="#" class="carte-populaire">
+                            <div class="image-populaire">
+                                <img src="images/hebergements/4_small/hotel-tout-bleu-et-blanc_s.jpg"
+                                     srcset="images/hebergements/4_small/hotel-tout-bleu-et-blanc_s.jpg 500w,
+                                             images/hebergements/3_medium/hotel-tout-bleu-et-blanc_m.jpg 1000w,
+                                             images/hebergements/2_large/hotel-tout-bleu-et-blanc_l.jpg 2000w,
+                                             images/hebergements/1_xlarge/hotel-tout-bleu-et-blanc_xl.jpg 4000w"
+                                     sizes="(max-width:767px) 37.93vw, (min-width:768px) and (max-width:991px) 13.95vw, (min-width:992px) 10.91vw"
+                                     alt="Hôtel Tout bleu et Blanc" />
+                            </div>
+                            <div class="info-populaire">    
+                                <h3 class="titre-populaire">Hôtel Tout bleu et Blanc</h3>
+                                <p class="tarif-populaire">Nuit à partir de 68<span class="bold">€</span></p>
+                                <div class="icone-populaire etoile-bleu">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star etoile-grise"></i>
+                                </div>    
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-activites">
+                <div id="titre-activites">
+                    <h2 id="activites">Activités à Marseille</h2>
+                </div>
+                <div id="activites-position">
+                    <a href="#" class="vieux-port carte-activite">
+                        <div class="image-activite">
+                            <img src="images/activites/4_small/vieux-port_s.jpg"
+                                 srcset="images/activites/4_small/vieux-port_s.jpg 702w,
+                                         images/activites/3_medium/vieux-port_m.jpg 1414w,
+                                         images/activites/2_large/vieux-port_l.jpg 2808w,
+                                         images/activites/1_xlarge/vieux-port_xl.jpg 5616w"
+                                 sizes="(max-width:767px) 92vw, (min-width:768px) and (max-width:991px) 42.55vw, (min-width:992px) 21.05vw"
+                                 alt="Vieux Port" />
+                        </div>
+                        <div class="info-activite">
+                            <h3 class="titre-activite">Vieux Port</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="fort-pomegues carte-activite">
+                        <div class="image-activite">
+                            <img src="images/activites/4_small/fort-de-pomegues_s.jpg"
+                                 srcset="images/activites/4_small/fort-de-pomegues_s.jpg 356w,
+                                         images/activites/3_medium/fort-de-pomegues_m.jpg 711w,
+                                         images/activites/2_large/fort-de-pomegues_l.jpg 1422w,
+                                         images/activites/1_xlarge/fort-de-pomegues_xl.jpg 2843w"
+                                 sizes="(max-width:767px) 92vw, (min-width:768px) and (max-width:991px) 42.55vw, (min-width:992px) 21.05vw"
+                                 alt="Fort de Pomègues" />
+                        </div>
+                        <div class="info-activite">
+                            <h3 class="titre-activite">Fort de Pomègues</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="iles-frioul carte-activite">
+                        <div class="image-activite">
+                            <img src="images/activites/4_small/iles-du-frioul_s.jpg"
+                                 srcset="images/activites/4_small/iles-du-frioul_s.jpg 648w,
+                                         images/activites/3_medium/iles-du-frioul_m.jpg 1296w,
+                                         images/activites/2_large/iles-du-frioul_l.jpg 2592w,
+                                         images/activites/1_xlarge/iles-du-frioul_xl.jpg 5184w"
+                                 sizes="(max-width:767px) 92vw, (min-width:768px) and (max-width:991px) 42.55vw, (min-width:992px) 21.05vw"
+                                 alt="Iles du Frioul" />
+                        </div>
+                        <div class="info-activite">
+                            <h3 class="titre-activite">Iles du Frioul</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="calanques carte-activite">
+                        <div class="image-activite">
+                            <img src="images/activites/4_small/parc-national-des-calanques_s.jpg"
+                                 srcset="images/activites/4_small/parc-national-des-calanques_s.jpg 606w,
+                                         images/activites/3_medium/parc-national-des-calanques_m.jpg 1212w,
+                                         images/activites/2_large/parc-national-des-calanques_l.jpg 2423w,
+                                         images/activites/1_xlarge/parc-national-des-calanques_xl.jpg 4846w"
+                                 sizes="(max-width:767px) 92vw, (min-width:768px) and (max-width:991px) 42.55vw, (min-width:992px) 21.05vw"
+                                 alt="Parc National des Calanques" />
+                        </div>
+                        <div class="info-activite">
+                            <h3 class="titre-activite">Parc National des Calanques</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="notre-dame carte-activite">
+                        <div class="image-activite">
+                            <img src="images/activites/4_small/notre-dame-de-la-garde_s.jpg"
+                                 srcset="images/activites/4_small/notre-dame-de-la-garde_s.jpg 589w,
+                                         images/activites/3_medium/notre-dame-de-la-garde_m.jpg 1178w,
+                                         images/activites/2_large/notre-dame-de-la-garde_l.jpg 2356w,
+                                         images/activites/1_xlarge/notre-dame-de-la-garde_xl.jpg 4712w"
+                                 sizes="(max-width:767px) 92vw, (min-width:768px) and (max-width:991px) 42.55vw, (min-width:992px) 21.05vw"
+                                 alt="Notre-Dame-de-la-Garde" />
+                        </div>
+                        <div class="info-activite">
+                            <h3 class="titre-activite">Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="parc-longchamp carte-activite">
+                        <div class="image-activite">
+                            <img src="images/activites/4_small/parc-longchamp_s.jpg"
+                                 srcset="images/activites/4_small/parc-longchamp_s.jpg 504w,
+                                         images/activites/3_medium/parc-longchamp_m.jpg 1008w,
+                                         images/activites/2_large/parc-longchamp_l.jpg 2016w,
+                                         images/activites/1_xlarge/parc-longchamp_xl.jpg 4032w"
+                                 sizes="(max-width:767px) 92vw, (min-width:768px) and (max-width:991px) 42.55vw, (min-width:992px) 21.05vw"
+                                 alt="Parc Longchamp" />
+                        </div>
+                        <div class="info-activite">
+                            <h3 class="titre-activite">Parc Longchamp</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="categorie-footer">
+                <h4>A propos</h4>
+                <ul>
+                    <li><a href="#">Fontionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="categorie-footer">
+                <h4>Nos hébergements</h4>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="categorie-footer">
+                <h4>Assistance</h4>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
